@@ -1,23 +1,30 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport"
-          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+          content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Clickvestor</title>
     <link rel="stylesheet" href="styles.css">
-    <script src="script.js"></script>
 </head>
 <body>
-    <h1>Clickvestor</h1>
-    
-    <button id="btn">Click</button>
-    <p>
-        Clicks: <span id="display">0</span>
-    </p>
+    <h1>Click Capital</h1>
+    <button id="btn">Click me!</button>
+    <p>Clicks: <span id="display">0</span></p>
+    <button id="investBtn">Invest</button>
 
-    <button id="store">Invest</button>
-    
+   <!-- Investment modal -->
+<div id="investModal" class="modal hidden">
+    <div class="modal-content">
+        <span id="closeModal">&times;</span>
+        <h2>Upgrades</h2>
+        <div id="upgradesContainer">
+            <!-- Upgrade buttons will appear here -->
+        </div>
+    </div>
+</div>
+
+    <script src="script.js"></script>
 </body>
 </html>
